@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        .herosection {
+            background-color: rgb(96, 94, 94);
+        }
+
+        .herosection img {
+            height: 650px;
+            width: 1493px;
+            float: center;
+            border: 1px soliod rgb(36, 34, 34);
+            opacity: 0.7;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: rgb(96, 94, 94);
+
+
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            /* Makes text visible on a dark image */
+            padding: 10px;
+            font-size: 25px;
+            text-align: left;
+            color: black;
+        }
+
+        .navbar {
+            background-color: rgb(37, 37, 37);
+
+        }
+
+        .navbar a {
+            margin: 10px 10px 10px;
+            justify-content: space-around;
+            color: bisque;
+        }
+
+        #aboutme {
+            display: flex;
+            background-color: rgb(61, 55, 58);
+            height: 270px;
+            text-align: center;
+            justify-content: space-around;
+            border: 1px solid black;
+            margin-left: 10px;
+
+        }
+
+        .box {
+            background-color: rgb(249, 248, 248);
+            width: 1300px;
+            margin: 20px 20px 20px;
+            border: 2px solid black;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #SKILL {
+            background-color: rgb(61, 55, 58);
+            margin-left: 10px;
+            margin-top: 5px;
+            height: 370px;
+            border: 1px solid black;
+
+
+        }
+
+        #skill {
+            font-size: 30px;
+            text-align: center;
+            text-decoration: underline;
+
+        }
+
+        #SKILL img {
+            border-radius: 35px;
+            /* border: 1px solid black; */
+            height: 160px;
+            width: 160px;
+            box-shadow: 5px 5px 5px 10px rgb(93, 90, 90);
+            margin: 20px 20px 0px;
+            justify-content: space-around;
+            animation: scroll 5s linear infinite;
+
+        }
+
+        #block {
+            background-color: rgb(252, 248, 248);
+            width: 1300px;
+            border: 2px solid black;
+            margin-left: 80px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+                /* Start position */
+            }
+
+            to {
+                transform: translateX(-100%);
+                /* Move the entire track leftward */
+            }
+        }
+
+        .model-container img {
+            display: flex;
+            background: #fffefe;
+            width: 500px;
+            height: 500px;
+        }
+
+        #CONTACT {
+            border: 1px solid black;
+            background-color: rgb(35, 34, 34);
+            height: 300px;
+            margin-top: 10px;
+
+        }
+
+        .con {
+            background-color: rgb(254, 254, 255);
+            border: 1px solid black;
+            text-align: center;
+            font-size: 22px;
+            height: 250px;
+            margin-left: 50px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="HOME">
+        <!-- navbar is start -->
+        <div class="navbar">
+            <a href="#HOME">HOME</a>
+            <a href="#aboutme">ABOUTME</a>
+            <a href="#SKILL">SKILL</a>
+            <a href="#CONTACT">CONTACT</a>
+
+        </div>
+        <!-- navabr is end -->
+        <!-- heosection is start -->
+        <div class="herosection">
+            <div class="text">
+                <h1>Deeksha vashishtha</h1>
+                <span id="element"></span>
+            </div>
+            <!-- on hovering image move -->
+            <div class="model-container" data-tilt data-tilt-max="15" data-tilt-speed="400"
+                data-tilt-perspective="1000">
+                <img src="c:\Users\HP\Pictures\Camera Roll\my.jpeg" alt="hello">
+                
+            </div>
+        </div>
+        <!-- herosection is end -->
+        <!-- about section is start -->
+        <section id="aboutme">
+            <div class="box">
+                <u>
+                    <h2> ABOUT ME </h2>
+                </u>
+                Hii, I am Deeksha . I am a dedicated web developer and frontend designer,
+                specialize in creating responsive, user-centric web applications using HTML5, CSS3, JavaScript, and
+                frameworks like React or Node.js.
+                I am eager to apply my technical skills and passion for clean, functional code to a professional team,
+                focusing on building engaging, modern digital experience <br>
+                currently persuing B.TECH[3rd year] in computer science from Faculty of Engineering and technology Agra
+                college,Agra.
+            </div>
+
+        </section>
+        <!-- about section is end -->
+        <!-- skill section start -->
+        <div id="SKILL">
+            <div id="block">
+                <section id="skill">SKILLS</section>
+                <section><b><u>programming language</u></b></section>
+                <img src="images/html.jpg" alt="">
+                <img src="images/css.png" alt="">
+                <img src="images/js2.png" alt="">
+                <img src="images/python logo.jpg" alt="">
+                <img src="images/c.png" alt=""><BR></BR>
+                <section><b><u>TECHNICAL SKILLS</u></b><br>
+                    Data structure and algorithm <br>
+                    Databasedesign <br>
+                    Problem solving skills <br>
+                    Design and analysis of algorithm
+                </section>
+            </div>
+        </div>
+        <!-- skill section is end -->
+        <!-- contact is start -->
+        <div id="CONTACT">
+            <div class="con">
+                <b><u>CONTACT</u></b>
+                <br>
+                <i>Let's work together</i><br>
+                <i> I will be in your next project,contact me through given details.</i>
+                <br><br>
+                deekshavashishtha093@gmail.com <br>
+                +91 9068236001 <br>
+               
+                    <button class="operate">Let's Chat</button>
+                </a>
+                <br><br>
+                <a
+                    href="https://www.linkedin.com/in/deeksha-vashishtha-a5a155342/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BBgQ4GYQdRh2hawUWh8eq%2FQ%3D%3D">
+                    <img src="images/linkdin.png" alt="" height="40px" width="40px">
+                </a>
+                <a href="c:\Users\HP\Pictures\Saved Pictures\Telegram.html">
+                    <img src="images/telegram.png" alt="" height="40px" width="40px">
+                </a>
+                <a href="https://github.com/Deeweb09/CODSOFT/commits?author=Deeweb09">
+                    <img src="images/github.png" alt="" height="40px" width="40px">
+                </a>
+                <!-- contact section end -->
+            </div>
+
+
+        </div>
+    </div>
+    <!-- script tag to overwrite text on image and moving of image -->
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web developer', '&amp; Frontend designer'],
+            typeSpeed: 50,
+        });
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    
+
+    <script>
+        window.onload = function () {
+            // Basic confetti explosion
+            confetti({
+                particleCount: 150, spread: 100, origin: { y: 0.6 } // Slightly lower than the top
+            });
+        };
+    </script>
+
+
+
+
+</body>
+
+</html>
